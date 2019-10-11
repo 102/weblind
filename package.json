@@ -1,21 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
+    "start": "parcel serve -d dest src/*.html",
+    "build": "rimraf dest && parcel build src/*.html -d dest",
     "test": "ls dest",
     "pretest": "npm run build",
     "deploy": "cd dest && rsync -az --delete --exclude=.DS_Store . web-standards.ru:/var/www/weblind.ru/html/"
   },
   "dependencies": {
     "autoprefixer": "^7.1.2",
-    "browser-sync": "^2.18.2",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-csso": "^3.0.0",
-    "gulp-html-replace": "^1.6.2",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-postcss": "^7.0.0",
-    "gulp-uglify": "^3.0.0"
+    "jquery": "^1.12.4",
+    "parcel": "^1.12.4",
+    "rimraf": "^3.0.0"
   }
 }

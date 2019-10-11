@@ -1,5 +1,7 @@
 'use strict';
 
+var $ = require('jquery');
+
 var $topMenu = $('#vertical-menu');
 var $header = $('header');
 var $sidebar = $('#sidebar > div.js-sidebar-fixed');
