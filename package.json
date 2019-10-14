@@ -16,7 +16,7 @@
     "gulp-html-replace": "^1.6.2",
     "gulp-htmlmin": "^3.0.0",
     "gulp-postcss": "^7.0.0",
-    "gulp-uglify": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "jquery": "^3.4.1"
   }
 }
