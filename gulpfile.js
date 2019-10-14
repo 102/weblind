@@ -59,7 +59,7 @@ gulp.task('js:index', () => {
 
 gulp.task('js:inner', () => {
   return gulp.src([
-      'src/js/jquery.js',
+      'node_modules/jquery/dist/jquery.js',
       'src/js/inner.js'
     ])
     .pipe(uglify())
